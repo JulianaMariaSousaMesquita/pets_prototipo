@@ -1,0 +1,87 @@
+/* ESTILOS GERAIS */
+html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --colorBackgroundPrimary: #e96000;
+    --colorBackgroundSecondary: #fff;
+    --colorBackgroundThird: #236B8E;
+    --colorTextPrimary:#000;
+    --colorTextSecudary:#636363;
+
+}
+
+
+/* BODY */
+body{
+    background-color: var(--colorBackgroundSecondary);
+}
+
+/* HEADER */
+header{
+    background-color: var(--colorBackgroundPrimary);
+    color: var(--colorBackgroundSecondary);
+    padding-top: 10px;
+    width: 100%;
+    height:auto;
+}
+
+header h2 div{
+    color: var(--colorBackgroundPrimary);
+}
+
+
+header a {
+    color: var(--colorBackgroundSecondary);
+}
+
+header nav ul li a{
+    color:var(--colorBackgroundSecondary);
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color:var(--colorBackgroundPrimary);
+    color:var(--colorBackgroundSecondary);
+    padding-top: 10px;
+    width: 100%;
+    height:auto;
+    
+}
+
+footer nav ul li a{
+    color:var(--colorBackgroundSecondary);
+    list-style: none;
+    text-decoration: none;
+}
+
+
+object {
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+}
+
+
+.imagem {
+    background:url(../images/background.png);
+}
+.texto {
+    
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    text-align: center;
+    font-size: 30px; 
+    margin: 90px;
+    padding: 40px;
+
+}
