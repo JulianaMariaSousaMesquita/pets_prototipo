@@ -22,14 +22,109 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
     
+    <!-- Importanto Jquery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="             crossorigin="anonymous"></script>
+
   </head>
 <body>
-  <header>
-
-  </header>
   
+  <!-- Importando menu  -->
+  <object type="text/html" data="menu.html"></object>
+  
+<center> 
+  <div class="container">
+    <h1> Cadastro Pet para adoção</h1><br>
+    <div class="row">
+        <form>
+          <div class="form-group col-sm-8">
+            <label for="exampleFormControlInput1">Nome Animal</label>
+            <input type="nome" class="form-control" id="exampleFormControlInput1" placeholder="Pluto">
+          </div>
+          <div class="form-group col-sm-2">
+            <label for="exampleFormControlFile1">Foto Pet</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>                    
+          <div class="form-group col-sm-8">
+            <label for="exampleFormControlInput1">Idade</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="12">
+          </div>          
+          <div class="form-group col-sm-2">
+            <label for="exampleFormControlSelect1">Especie</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Cachorro</option>
+              <option>Gato</option>
+              <option>Pássaros</option>
+              <option>Répteis</option>
+              <option>outro</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-2">
+            <label for="exampleFormControlSelect1">cor</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Preto</option>
+              <option>branco</option>
+              <option>Amarelo</option>
+              <option>Malhado predominante branco</option>
+              <option>Malhado predominante preto</option>
+              <option>Malhado predominante marrom</option>
+              <option>Malhado predominante amarelo</option>             
+            </select>
+          </div>          
+          <div class="form-group col-sm-8">
+            <label for="exampleFormControlTextarea1">Descrição</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-group col-sm-2">
+            <label for="exampleFormControlSelect1">Porte</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Pequeno</option>
+              <option>Medio</option>
+              <option>Grande</option>             
+            </select>
+          </div>
+          <div class="form-group col-sm-2">
+            <label for="exampleFormControlSelect1">Olhos</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Marrom</option>
+              <option>Preto</option>
+              <option>Azul</option>
+              <option>Verde</option>
+              <option>Amarelo</option>          
+            </select>
+          </div>
+          
+          <div class="form-group col-sm-2">
+            <label for="exampleFormControlSelect1">Custo Mensal</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Até R$50</option>
+              <option>Até R$100</option>
+              <option>Até R$200</option>
+              <option>Até R$300</option>      
+            </select>
+          </div>
 
+          <div class="form-check col-sm-1">
+            <input class="form-check-input" type="checkbox" value="" id="passeio">
+            <label class="form-check-label" for="defaultCheck1">
+              Necessita Passeio
+            </label>
+          </div>
+          <div class="form-check col-sm-1">
+            <input class="form-check-input" type="checkbox" value="" id="companhia">
+            <label class="form-check-label" for="defaultCheck1">
+              Necessita Companhia
+            </label>
+          </div>
+        </form>  
+    </div>
+  </div>
+</center>
+<br><br><br>
 
+  <!-- Importando rodape  -->
+  <object type="text/html" data="footer.html"></object>
+
+  
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
