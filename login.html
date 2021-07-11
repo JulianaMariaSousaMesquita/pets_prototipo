@@ -22,14 +22,71 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
     
+    <!-- Importanto Jquery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="             crossorigin="anonymous"></script>
+
   </head>
 <body>
-  <header>
-
-  </header>
   
+  <!-- Importando menu  -->
+  <object type="text/html" data="menu.html"></object>
+  <br><br><br><br><br><br>
+<center> 
+ 
+  <div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="user_card">
+				<div class="d-flex justify-content-center">
+					<div class="brand_logo_container">
+						<img src="assets/images/logo.png" alt="Logo" width="100px">
+					</div>
+				</div>
+				<div class="d-flex justify-content-center form_container">
+					<form>
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="email" name="email" class="form-control input_user" value="" placeholder="example@gmail.com">
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="password" name="" class="form-control input_pass" value="" placeholder="password">
+						</div>
+						<div class="form-group">
+							<div class="custom-control custom-checkbox"><br>
+								<input type="checkbox" class="custom-control-input" id="customControlInline">
+								<label class="custom-control-label" for="customControlInline">Lembrar</label>
+							</div>
+						</div>
+							<div class="d-flex justify-content-center mt-3 login_container">
+				 	<button type="button" name="button" class="btn login_btn">Login</button>
+				   </div>
+					</form>
+				</div>
+		
+				<div class="mt-4">
+					<div class="d-flex justify-content-center links">
+						<br>Não tem conta?<br>
+            <a href="register.html" class="ml-2" target="_blank">Cadastro adotante</a>  |  <a href="registerprotector.html" class="ml-2">Cadastro protetor</a>
+					</div>
+					<div class="d-flex justify-content-center links">
+						<br><br><a href="contact.html" target="_blank">Esqueceu sua senha?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+</center>
+<br><br><br>
 
+  <!-- Importando rodape  -->
+  <object type="text/html" data="footer.html"></object>
+
+  
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
