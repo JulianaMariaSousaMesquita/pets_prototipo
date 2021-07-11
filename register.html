@@ -33,90 +33,155 @@
   
 <center> 
   <div class="container">
-    <h1> Cadastro Pet para adoção</h1><br>
+    <h1> Cadastro Adotante</h1><br><br>
     <div class="row">
+      <h2>Dados Pessoais</h2>
         <form>
-          <div class="form-group col-sm-8">
-            <label for="exampleFormControlInput1">Nome Animal</label>
+          <div class="form-group col-sm-6">
+            <label for="exampleFormControlInput1">Nome </label>
             <input type="nome" class="form-control" id="exampleFormControlInput1" placeholder="Pluto">
           </div>
-          <div class="form-group col-sm-2">
-            <label for="exampleFormControlFile1">Foto Pet</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-          </div>                    
-          <div class="form-group col-sm-8">
-            <label for="exampleFormControlInput1">Idade</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="12">
-          </div>          
-          <div class="form-group col-sm-2">
-            <label for="exampleFormControlSelect1">Especie</label>
+          <div class="form-group col-sm-6">
+            <label for="exampleFormControlInput1">E-mail </label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
+          </div>            
+          
+          <div class="form-group col-sm-6">
+            <label for="exampleFormControlInput1">Número documento</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="158.555.657.00">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="exampleFormControlSelect1">Documento</label>
             <select class="form-control" id="exampleFormControlSelect1">
-              <option>Cachorro</option>
-              <option>Gato</option>
-              <option>Pássaros</option>
-              <option>Répteis</option>
-              <option>outro</option>
+              <option>RG</option>
+              <option>CPF</option>
             </select>
           </div>
-          <div class="form-group col-sm-2">
-            <label for="exampleFormControlSelect1">cor</label>
+          <div class="form-group col-sm-6">
+            <label for="exampleFormControlSelect1">Quantas pessoas moram na residência</label>
             <select class="form-control" id="exampleFormControlSelect1">
-              <option>Preto</option>
-              <option>branco</option>
-              <option>Amarelo</option>
-              <option>Malhado predominante branco</option>
-              <option>Malhado predominante preto</option>
-              <option>Malhado predominante marrom</option>
-              <option>Malhado predominante amarelo</option>             
-            </select>
-          </div>          
-          <div class="form-group col-sm-8">
-            <label for="exampleFormControlTextarea1">Descrição</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <div class="form-group col-sm-2">
-            <label for="exampleFormControlSelect1">Porte</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Pequeno</option>
-              <option>Medio</option>
-              <option>Grande</option>             
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>acima de 4</option>
             </select>
           </div>
-          <div class="form-group col-sm-2">
-            <label for="exampleFormControlSelect1">Olhos</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Marrom</option>
-              <option>Preto</option>
-              <option>Azul</option>
-              <option>Verde</option>
-              <option>Amarelo</option>          
-            </select>
+          <div class="form-group col-sm-4">
+            <label for="exampleFormControlInput1">Telefone</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(21)00000-0000">
           </div>
           
-          <div class="form-group col-sm-2">
-            <label for="exampleFormControlSelect1">Custo Mensal</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Até R$50</option>
-              <option>Até R$100</option>
-              <option>Até R$200</option>
-              <option>Até R$300</option>      
-            </select>
+          <div class="form-group col-sm-4">
+            <label for="entrevista">Agendar entrevista</label><br>
+            <input type="date" id="calendario" />
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="manha" value="option1" checked>
+              <label class="form-check-label" for="manha">
+                Manhã
+              </label>
+              <input class="form-check-input" type="radio" name="exampleRadios" id="tarde" value="option2">
+              <label class="form-check-label" for="tarde">
+                Tarde
+              </label> 
+              <input class="form-check-input" type="radio" name="exampleRadios" id="noite" value="option3">
+              <label class="form-check-label" for="noite">
+                Noite
+              </label>
+            </div>
           </div>
 
-          <div class="form-check col-sm-1">
-            <input class="form-check-input" type="checkbox" value="" id="passeio">
-            <label class="form-check-label" for="defaultCheck1">
-              Necessita Passeio
-            </label>
+          <div class="form-group col-sm-4">
+            <label for="exampleFormControlInput1"> <a href="http://site.amigonaosecompra.com.br/wp-content/uploads/2012/07/Termo-de-adocao-e-guarda-responsavel.pdf">Assine o Termo de Responsabilidade</a> - Adicione o arquivo assinado abaixo</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
           </div>
-          <div class="form-check col-sm-1">
-            <input class="form-check-input" type="checkbox" value="" id="companhia">
-            <label class="form-check-label" for="defaultCheck1">
-              Necessita Companhia
-            </label>
-          </div>
+
+          <div class="form-group col-sm-4">
+            <label for="residencia"> Adicione comprovante de residência</label>
+            <input type="file" class="form-control-file" id="residencia">
+          </div>           
         </form>  
     </div>
+    <br><br><br><br>
+    <div class="row">
+      <h2>Dados preferencia pet</h2>
+      <form>                  
+        <div class="form-group col-sm-8">
+          <label for="exampleFormControlInput1">Idade</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="12">
+        </div>          
+        <div class="form-group col-sm-2">
+          <label for="exampleFormControlSelect1">Especie</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Cachorro</option>
+            <option>Gato</option>
+            <option>Pássaros</option>
+            <option>Répteis</option>
+            <option>outro</option>
+            <option>todos</option>
+          </select>
+        </div>
+        <div class="form-group col-sm-2">
+          <label for="exampleFormControlSelect1">cor</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Preto</option>
+            <option>branco</option>
+            <option>Amarelo</option>
+            <option>Malhado predominante branco</option>
+            <option>Malhado predominante preto</option>
+            <option>Malhado predominante marrom</option>
+            <option>Malhado predominante amarelo</option>
+            <option>Todos</option>             
+          </select>
+        </div>
+        <div class="form-group col-sm-2">
+          <label for="exampleFormControlSelect1">Porte</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Pequeno</option>
+            <option>Medio</option>
+            <option>Grande</option>
+            <option>Todos</option>             
+          </select>
+        </div>
+        <div class="form-group col-sm-2">
+          <label for="exampleFormControlSelect1">Olhos</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Marrom</option>
+            <option>Preto</option>
+            <option>Azul</option>
+            <option>Verde</option>
+            <option>Amarelo</option>
+            <option>Todos</option>  
+          </select>
+        </div>
+        
+        <div class="form-group col-sm-2">
+          <label for="exampleFormControlSelect1">Custo Mensal</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Até R$50</option>
+            <option>Até R$100</option>
+            <option>Até R$200</option>
+            <option>Até R$300</option>
+            <option>Todos</option>   
+          </select>
+        </div>
+
+        <div class="form-check col-sm-1">
+          <input class="form-check-input" type="checkbox" value="" id="passeio">
+          <label class="form-check-label" for="defaultCheck1">
+            Necessita Passeio
+          </label>
+        </div>
+        <div class="form-check col-sm-1">
+          <input class="form-check-input" type="checkbox" value="" id="companhia">
+          <label class="form-check-label" for="defaultCheck1">
+            Necessita Companhia
+          </label>
+        </div>          
+      </form>        
+  </div>
+  <br><br>
+    <button class="btn btn-warning" type="submit">Cadastrar</button>
   </div>
 </center>
 <br><br><br>
@@ -126,6 +191,7 @@
 
   
 
+    </script>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
