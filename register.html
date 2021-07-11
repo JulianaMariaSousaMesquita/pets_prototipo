@@ -37,27 +37,27 @@
     <div class="row">
       <h2>Dados Pessoais</h2>
         <form>
-          <div class="form-group col-sm-6">
+          <div class="form-group col-sm-4">
             <label for="exampleFormControlInput1">Nome </label>
             <input type="nome" class="form-control" id="exampleFormControlInput1" placeholder="Pluto">
           </div>
-          <div class="form-group col-sm-6">
+          <div class="form-group col-sm-4">
             <label for="exampleFormControlInput1">E-mail </label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
           </div>            
           
-          <div class="form-group col-sm-6">
+          <div class="form-group col-sm-4">
             <label for="exampleFormControlInput1">Número documento</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="158.555.657.00">
           </div>
-          <div class="form-group col-sm-6">
+          <div class="form-group col-sm-4">
             <label for="exampleFormControlSelect1">Documento</label>
             <select class="form-control" id="exampleFormControlSelect1">
               <option>RG</option>
               <option>CPF</option>
             </select>
           </div>
-          <div class="form-group col-sm-6">
+          <div class="form-group col-sm-4">
             <label for="exampleFormControlSelect1">Quantas pessoas moram na residência</label>
             <select class="form-control" id="exampleFormControlSelect1">
               <option>1</option>
@@ -91,6 +91,28 @@
             </div>
           </div>
 
+          <div class="form-group col-sm-2">
+            <label for="exampleFormControlSelect1">Disponibilidade Mensal</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Até R$50</option>
+              <option>Até R$100</option>
+              <option>Até R$200</option>
+              <option>Até R$300</option>
+              <option>Todos</option>   
+            </select>
+          </div>
+
+          <div class="form-group col-sm-2">
+            <label for="casa">Tempo que fica fora de casa</label>
+            <select class="form-control" id="casa">
+              <option>até 4h</option>
+              <option>até 8h</option>
+              <option>até 12h</option>
+              <option>até 15h</option>
+              <option>mais de 24h</option>              
+            </select>
+          </div> 
+
           <div class="form-group col-sm-4">
             <label for="exampleFormControlInput1"> <a href="http://site.amigonaosecompra.com.br/wp-content/uploads/2012/07/Termo-de-adocao-e-guarda-responsavel.pdf">Assine o Termo de Responsabilidade</a> - Adicione o arquivo assinado abaixo</label>
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -106,11 +128,18 @@
     <div class="row">
       <h2>Dados preferencia pet</h2>
       <form>                  
-        <div class="form-group col-sm-8">
-          <label for="exampleFormControlInput1">Idade</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="12">
-        </div>          
-        <div class="form-group col-sm-2">
+        <div class="form-group col-sm-4">
+          <label for="exampleFormControlSelect1">Idade</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Filhote</option>
+            <option>Até 1 ano</option>
+            <option>Até 3 anos</option>
+            <option>até 5 anos</option>
+            <option>Mais de 5 anos</option>
+            <option>Indiferente</option>
+          </select>
+        </div>        
+        <div class="form-group col-sm-4">
           <label for="exampleFormControlSelect1">Especie</label>
           <select class="form-control" id="exampleFormControlSelect1">
             <option>Cachorro</option>
@@ -118,10 +147,10 @@
             <option>Pássaros</option>
             <option>Répteis</option>
             <option>outro</option>
-            <option>todos</option>
+            <option>Indiferente</option>
           </select>
         </div>
-        <div class="form-group col-sm-2">
+        <div class="form-group col-sm-4">
           <label for="exampleFormControlSelect1">cor</label>
           <select class="form-control" id="exampleFormControlSelect1">
             <option>Preto</option>
@@ -131,19 +160,19 @@
             <option>Malhado predominante preto</option>
             <option>Malhado predominante marrom</option>
             <option>Malhado predominante amarelo</option>
-            <option>Todos</option>             
+            <option>Indiferente</option>             
           </select>
         </div>
-        <div class="form-group col-sm-2">
+        <div class="form-group col-sm-4">
           <label for="exampleFormControlSelect1">Porte</label>
           <select class="form-control" id="exampleFormControlSelect1">
             <option>Pequeno</option>
             <option>Medio</option>
             <option>Grande</option>
-            <option>Todos</option>             
+            <option>Indiferente</option>             
           </select>
         </div>
-        <div class="form-group col-sm-2">
+        <div class="form-group col-sm-4">
           <label for="exampleFormControlSelect1">Olhos</label>
           <select class="form-control" id="exampleFormControlSelect1">
             <option>Marrom</option>
@@ -151,33 +180,18 @@
             <option>Azul</option>
             <option>Verde</option>
             <option>Amarelo</option>
-            <option>Todos</option>  
+            <option>Indiferente</option>  
           </select>
-        </div>
+        </div>        
         
-        <div class="form-group col-sm-2">
-          <label for="exampleFormControlSelect1">Custo Mensal</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>Até R$50</option>
-            <option>Até R$100</option>
-            <option>Até R$200</option>
-            <option>Até R$300</option>
-            <option>Todos</option>   
-          </select>
-        </div>
-
+        
         <div class="form-check col-sm-1">
           <input class="form-check-input" type="checkbox" value="" id="passeio">
           <label class="form-check-label" for="defaultCheck1">
-            Necessita Passeio
+            Dispense passeio
           </label>
         </div>
-        <div class="form-check col-sm-1">
-          <input class="form-check-input" type="checkbox" value="" id="companhia">
-          <label class="form-check-label" for="defaultCheck1">
-            Necessita Companhia
-          </label>
-        </div>          
+                 
       </form>        
   </div>
   <br><br>
