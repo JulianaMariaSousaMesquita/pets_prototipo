@@ -71,17 +71,3 @@ object {
     height:100%;
 }
 
-
-.imagem {
-    background:url(../images/background.png);
-}
-.texto {
-    
-    background-color: rgba(0,0,0,0.5);
-    color:#fff;
-    text-align: center;
-    font-size: 30px; 
-    margin: 90px;
-    padding: 40px;
-
-}
