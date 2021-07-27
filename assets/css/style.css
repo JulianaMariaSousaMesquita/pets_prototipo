@@ -138,3 +138,17 @@ object {
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: var(--colorBackgroundThird) !important;
 }
+
+
+/* -------------------  Texto em cima imagem hospedagem ------------------- */
+.dados {
+    bottom: 10px;
+    right: 10px;
+}
+
+.text {
+    font-family: "Arial Bold", Arial;
+    font-weight: 700;
+    font-size: 22px;
+    color: #ffffff !important;
+}
