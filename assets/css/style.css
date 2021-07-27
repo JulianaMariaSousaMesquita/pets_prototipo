@@ -1,4 +1,4 @@
-/* ESTILOS GERAIS */
+/*  ------------------- ESTILOS GERAIS  ------------------- */
 html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
     margin: 0;
     padding: 0;
@@ -7,17 +7,19 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     text-decoration: none;
 }
 
+/*  ------------------- Cores padrão  ------------------- */
 :root{
     --colorBackgroundPrimary: #e96000;
     --colorBackgroundSecondary: #fff;
-    --colorBackgroundThird: #236B8E;
+    --colorBackgroundThird: #c0392b;
+    --colorBackgroundFourth: #f39c12;
     --colorTextPrimary:#000;
     --colorTextSecudary:#636363;
 
 }
 
 
-/* BODY */
+/* -------------------  BODY  -------------------  */
 body{
     background-color: var(--colorBackgroundSecondary);
 }
@@ -48,7 +50,7 @@ header nav ul li a{
 
 
 
-/* FOOTER */
+/* -------------------  FOOTER -------------------  */
 footer{
     background-color:var(--colorBackgroundPrimary);
     color:var(--colorBackgroundSecondary);
@@ -72,13 +74,13 @@ object {
 }
 
 
-/* Estilo login */
+/* ------------------- Estilo login  ------------------- */
 .user_card {
     height: 400px;
     width: 350px;
     margin-top: auto;
     margin-bottom: auto;
-    background: #f39c12;
+    background: var(--colorBackgroundFourth);
     position: relative;
     display: flex;
     justify-content: center;
@@ -105,15 +107,15 @@ object {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--colorBackgroundSecondary);
 }
 .form_container {
     margin-top: 100px;
 }
 .login_btn {
     width: 100%;
-    background: #c0392b !important;
-    color: white !important;
+    background: var(--colorBackgroundThird) !important;
+    color: var(--colorBackgroundSecondary) !important;
 }
 .login_btn:focus {
     box-shadow: none !important;
@@ -123,8 +125,8 @@ object {
     padding: 0 2rem;
 }
 .input-group-text {
-    background: #c0392b !important;
-    color: white !important;
+    background: var(--colorBackgroundThird) !important;
+    color: var(--colorBackgroundSecondary) !important;
     border: 0 !important;
     border-radius: 0.25rem 0 0 0.25rem !important;
 }
@@ -134,5 +136,5 @@ object {
     outline: 0px !important;
 }
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #c0392b !important;
+    background-color: var(--colorBackgroundThird) !important;
 }
