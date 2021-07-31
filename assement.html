@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par Perpet</title>
+
+    <!-- Importando arquivo com estilo -->
+    <link rel="stylesheet" href="assets/css/style.css"/>  
+    
+    <!-- Importando imagem para barra de endereço -->
+    <link rel="sortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- BOOTSTRAP -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+<body>
+  
+  <!-- Importando menu  -->
+  <object type="text/html" data="menu.html"></object>
+<br>
+<center>
+  <h1> AVALIAÇÃO </h1>
+<br><br><br>
+<hr>
+<a href="javascript:void(0)" onclick="Avaliar(1)">
+  <img src="assets/images/star0.png" id="s1"></a>
+  
+  <a href="javascript:void(0)" onclick="Avaliar(2)">
+  <img src="assets/images/star0.png" id="s2"></a>
+  
+  <a href="javascript:void(0)" onclick="Avaliar(3)">
+  <img src="assets/images/star0.png" id="s3"></a>
+  
+  <a href="javascript:void(0)" onclick="Avaliar(4)">
+  <img src="assets/images/star0.png" id="s4"></a>
+  
+  <a href="javascript:void(0)" onclick="Avaliar(5)">
+  <img src="assets/images/star0.png" id="s5"></a>
+  <p id="rating">0</p>
+</center>
+  
+
+
+
+  <br><br><br>
+  <!-- Importando rodape  -->
+  <object type="text/html" data="footer.html"></object>
+
+  <script src="funcoes.js">
+    function Avaliar(estrela) {
+ var url = window.location;
+ url = url.toString()
+ url = url.split("index.html");
+ url = url[0];
+
+ var s1 = document.getElementById("s1").src;
+ var s2 = document.getElementById("s2").src;
+ var s3 = document.getElementById("s3").src;
+ var s4 = document.getElementById("s4").src;
+ var s5 = document.getElementById("s5").src;
+ var avaliacao = 0;
+
+if (estrela == 5){ 
+ if (s5 == url + "assets/images/star0.png") {
+ document.getElementById("s1").src = "assets/images/star1.png";
+ document.getElementById("s2").src = "assets/images/star1.png";
+ document.getElementById("s3").src = "assets/images/star1.png";
+ document.getElementById("s4").src = "assets/images/star1.png";
+ document.getElementById("s5").src = "assets/images/star1.png";
+ avaliacao = 5;
+ } else {
+ document.getElementById("s1").src = "assets/images/star1.png";
+ document.getElementById("s2").src = "assets/images/star1.png";
+ document.getElementById("s3").src = "assets/images/star1.png";
+ document.getElementById("s4").src = "assets/images/star1.png";
+ document.getElementById("s5").src = "assets/images/star0.png";
+ avaliacao = 4;
+}}
+ 
+ //ESTRELA 4
+if (estrela == 4){ 
+ if (s4 == url + "assets/images/star0.png") {
+ document.getElementById("s1").src = "assets/images/star1.png";
+ document.getElementById("s2").src = "assets/images/star1.png";
+ document.getElementById("s3").src = "assets/images/star1.png";
+ document.getElementById("s4").src = "assets/images/star1.png";
+ document.getElementById("s5").src = "assets/images/star0.png";
+ avaliacao = 4;
+ } else {
+ document.getElementById("s1").src = "assets/images/star1.png";
+ document.getElementById("s2").src = "assets/images/star1.png";
+ document.getElementById("s3").src = "assets/images/star1.png";
+ document.getElementById("s4").src = "assets/images/star0.png";
+ document.getElementById("s5").src = "assets/images/star0.png";
+ avaliacao = 3;
+}}
+
+//ESTRELA 3
+if (estrela == 3){ 
+ if (s3 == url + "assets/images/star0.png") {
+ document.getElementById("s1").src = "assets/images/star1.png";
+ document.getElementById("s2").src = "assets/images/star1.png";
+ document.getElementById("s3").src = "assets/images/star1.png";
+ document.getElementById("s4").src = "assets/images/star0.png";
+ document.getElementById("s5").src = "assets/images/star0.png";
+ avaliacao = 3;
+ } else {
+ document.getElementById("s1").src = "assets/images/star1.png";
+ document.getElementById("s2").src = "assets/images/star1.png";
+ document.getElementById("s3").src = "assets/images/star0.png";
+ document.getElementById("s4").src = "assets/images/star0.png";
+ document.getElementById("s5").src = "assets/images/star0.png";
+ avaliacao = 2;
+}}
+ 
+//ESTRELA 2
+if (estrela == 2){ 
+ if (s2 == url + "assets/images/star0.png") {
+ document.getElementById("s1").src = "assets/images/star1.png";
+ document.getElementById("s2").src = "assets/images/star1.png";
+ document.getElementById("s3").src = "assets/images/star0.png";
+ document.getElementById("s4").src = "assets/images/star0.png";
+ document.getElementById("s5").src = "assets/images/star0.png";
+ avaliacao = 2;
+ } else {
+ document.getElementById("s1").src = "assets/images/star1.png";
+ document.getElementById("s2").src = "assets/images/star0.png";
+ document.getElementById("s3").src = "assets/images/star0.png";
+ document.getElementById("s4").src = "assets/images/star0.png";
+ document.getElementById("s5").src = "assets/images/star0.png";
+ avaliacao = 1;
+}}
+ 
+ //ESTRELA 1
+if (estrela == 1){ 
+ if (s1 == url + "assets/images/star0.png") {
+ document.getElementById("s1").src = "assets/images/star1.png";
+ document.getElementById("s2").src = "assets/images/star0.png";
+ document.getElementById("s3").src = "assets/images/star0.png";
+ document.getElementById("s4").src = "assets/images/star0.png";
+ document.getElementById("s5").src = "assets/images/star0.png";
+ avaliacao = 1;
+ } else {
+ document.getElementById("s1").src = "assets/images/star0.png";
+ document.getElementById("s2").src = "assets/images/star0.png";
+ document.getElementById("s3").src = "assets/images/star0.png";
+ document.getElementById("s4").src = "assets/images/star0.png";
+ document.getElementById("s5").src = "assets/images/star0.png";
+ avaliacao = 0;
+}}
+ 
+ document.getElementById('rating').innerHTML = avaliacao;
+ 
+}
+
+  </script>
+
+
+  
+</body>
+</html>
