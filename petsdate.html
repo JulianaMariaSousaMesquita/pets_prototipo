@@ -27,7 +27,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="             crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>       
 
   </head>
 <body>
@@ -36,8 +36,10 @@
   <object type="text/html" data="menu.html"></object>
   
 
-  <div class="container">         
- <h2>Dados preferencia pet</h2>
+  <div class="container text-center">         
+  <br><br>
+  <h2>Dados para Match</h2>
+ <br><br>
  <form>   
    <div class="row">           
    <div class="form-group col-sm-4">
@@ -94,18 +96,58 @@
        <option>Amarelo</option>
        <option>Indiferente</option>  
      </select>
-   </div>        
-   
-   
-   <div class="form-check col-sm-1">
-     <input class="form-check-input" type="checkbox" value="" id="passeio">
-     <label class="form-check-label" for="defaultCheck1">
-       Dispense passeio
-     </label>
    </div>
-   <button class="btn btn-warning" type="submit">Cadastrar</button>         
- </form>          
+   <div class="form-check col-sm-4">
+    <input class="form-check-input" type="checkbox" value="" id="passeio">
+    <label class="form-check-label" for="defaultCheck1">
+      Dispense passeio
+    </label>
   </div>
+  </div>
+   <div class="row">  
+    <div class="form-group col-sm-4">
+      <label for="exampleFormControlSelect1">Quantas pessoas moram na residência</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>acima de 4</option>
+      </select>
+    </div>
+
+
+<div class="form-group col-sm-4">
+    <label for="exampleFormControlSelect1">Disponibilidade Mensal</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Até R$50</option>
+      <option>Até R$100</option>
+      <option>Até R$200</option>
+      <option>Até R$300</option>
+      <option>Todos</option>   
+    </select>
+  </div>
+
+  <div class="form-group col-sm-4">
+    <label for="casa">Tempo que fica fora de casa</label>
+    <select class="form-control" id="casa">
+      <option>até 4h</option>
+      <option>até 8h</option>
+      <option>até 12h</option>
+      <option>até 15h</option>
+      <option>mais de 24h</option>              
+    </select>
+  </div>   
+   
+   </div>           
+ </form>
+</div>
+<br><br>
+<div class="row justify-content-center">
+  <br><br>
+ <button class="btn btn-warning" type="submit">Match</button>  
+ <br><br>      
+</div>
   <br><br>
     
   </div>
