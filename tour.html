@@ -29,39 +29,54 @@
   
   <!-- Importando menu  -->
   <object type="text/html" data="menu.html"></object>
-  
-<div class="alert-warning">
+<center>  
+<div class="alert-warning center-block">
   <br>
   <img class="d-block w-100" src="assets/images/passeio.jpg" width="100%">
   <br><br>
   <form>
     <div class="form-row">
       <div class="col-sm-2">
-        <input type="text" class="form-control" placeholder="City">
+        <label for="exampleFormControlSelect1">Bairro</label>
+        <input type="text" class="form-control" placeholder="Ingá">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" placeholder="State">
+        <label for="exampleFormControlSelect1">Cidade</label>
+        <input type="text" class="form-control" placeholder="Niterói">
       </div>
       <div class="col-sm-1">
-        <input type="text" class="form-control" placeholder="Zip">
+        <label for="exampleFormControlSelect1">Estado</label>
+        <input type="text" class="form-control" placeholder="Rio de janeiro">
       </div>
-    </div> 
+
     <div class="form-group col-sm-2">
+      <label for="exampleFormControlSelect1">Frequência diária</label>
       <select class="form-control" id="exampleFormControlSelect1">
-        <option disabled>Faixa de preço</option>
-        <option>R$05 até R$15</option>
-        <option>R$20 até R$50</option>
-        <option>R$60 até R$100</option>
-        <option>R$110 até R$160</option>
-        <option>Acima de R$150</option>
-        <option>Todos</option>
+        <option>1 vez</option>
+        <option>2 vezes</option>
+        <option>3 vezes</option>         
       </select>
-    </div>     
-    <button class="btn btn-warning"  href="tour.html"> Encontrar Passeador </button>
+    </div>
+    
+    <div class="form-group col-sm-2">
+      <label for="exampleFormControlSelect1">Preço Mensal</label>
+      <select class="form-control" id="exampleFormControlSelect1">              
+        <option>R$100</option>
+        <option>R$120</option>
+        <option>R$150</option>
+        <option>R$200</option>
+        <option>R$220</option>
+        <option>R$250</option>
+        <option>AR$300</option>      
+      </select>
+    </div>
+  </div> 
+  <button class="btn btn-warning"  href="tour.html"> Encontrar Passeador </button>    
+  
   </form>
   <br><br>
 </div>
-
+</center>
 
 <br><br><br>
 <hr>
@@ -82,7 +97,7 @@
                 <li>Preço por hora: R$30,00</li>               
             </ul>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <button type="button" class="btn btn-warning"> <a href="message.html">Contatar</a></button>
       </div>
     </div>
@@ -90,10 +105,10 @@
     <br><br><hr><br><br>
 
     <div class="row">
-      <div class="col-sm-4">         
+      <div class="col-sm-3">         
         <a href="message.html"><img src="assets/images/image6.jpg"  class="rounded-circle" width="250px" /></a>         
       </div> 
-      <div class="col-sm-4">
+      <div class="col-sm-3">
             <ul>
                 <li><b>Nome passeador Jessica</b></li>
                 <li> Pontos de avaliação: 6.9</li>
@@ -103,7 +118,7 @@
                 <li>Preço por hora: R$25,00</li>               
             </ul>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <button type="button" class="btn btn-warning"> <a href="message.html">Contatar</a></button>
       </div>
     </div>
