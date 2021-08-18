@@ -35,86 +35,84 @@
   <object type="text/html" data="menu.html"></object>
   
 <center> 
+  <form>
   <div class="container">
-    <h1> Reservar Hospedagem</h1><br><br>
+    <div class="form-check col-sm-12">
+      <h1> Reservar Hospedagem</h1><br><br>
+    </div>
     <div class="row">
       <hr/>
-      <h2>Dados Pessoais</h2>
-        <form>
-          <div class="form-group col-sm-4">
+      <div class="form-check col-sm-12">
+        <h2>Dados Pessoais</h2>
+      </div>        
+          <div class="form-group col-sm-6">
             <label for="exampleFormControlInput1">Nome </label>
             <input type="nome" class="form-control" id="exampleFormControlInput1" placeholder="Pluto">
           </div>
-          <div class="form-group col-sm-4">
+          <div class="form-group col-sm-6">
             <label for="exampleFormControlInput1">E-mail </label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
           </div>            
           
-          <div class="form-group col-sm-4">
+          <div class="form-group col-sm-5">
             <label for="exampleFormControlInput1">Número documento</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="158.555.657.00">
           </div>
-          <div class="form-group col-sm-4">
+          <div class="form-group col-sm-5">
             <label for="exampleFormControlSelect1">Documento</label>
             <select class="form-control" id="exampleFormControlSelect1">
               <option>RG</option>
               <option>CPF</option>
             </select>
           </div>
-          <div class="form-group col-sm-4">
+          <div class="form-group col-sm-5">
             <label for="exampleFormControlInput1">Telefone</label>
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="(21)00000-0000">
           </div>
           
-          <div class="form-group col-sm-2">
+          <div class="form-group col-sm-4">
             <label for="exampleFormControlInput1">Dia de entrada</label>
             <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
           </div>
 
-          <div class="form-group col-sm-2">
+          <div class="form-group col-sm-4">
             <label for="exampleFormControlInput1">Dia de saída</label>
             <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
           </div>
     </div>
-
     <div class="row">
       <hr/>
-      <h2>Dados cartão de credito</h2>
-    <div class="form-check col-sm-1">
+      <div class="form-check col-sm-12">
+      <h2>Dados Pagamento</h2>   <br><br><br>
+    </div>
+      <p>
+    <div class="form-check col-sm-4">
       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-      <label class="form-check-label" for="inlineRadio1">MasterCard</label>
+      <label class="form-check-label" for="inlineRadio1">Cartão de credito</label>
     </div>
-    <div class="form-check col-sm-1">
+    <div class="form-check col-sm-4">
       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-      <label class="form-check-label" for="inlineRadio2">Visa</label>
+      <label class="form-check-label" for="inlineRadio2">Cartão de débito</label>
     </div>
-    <div class="form-check col-sm-1">
+    <div class="form-check col-sm-4">
       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
-      <label class="form-check-label" for="inlineRadio3">American Express </label>
+      <label class="form-check-label" for="inlineRadio3">Dinheiro </label>
     </div>
-    
-    <div class="form-group col-sm-4">
-      <label for="exampleFormControlInput1">Número do Cartão (CVV)</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-    </div>
-
-    <div class="form-group col-sm-2">
-      <label for="exampleFormControlInput1">Data de Validade</label>
-      <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="12/06/2025">
-    </div>
-
-    <div class="form-group col-sm-2">
-      <label for="exampleFormControlInput1">Código Segurança </label>
-      <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="659">
+    </p>
+    <div class="form-check col-sm-12">
+      <br><br>
+      <h6><strong>** Pagamento deve ser realizado no local, na hora da entrega do animal. **</strong> </h6>
+      <br><br>
     </div>
     <br><br><br><br>
     </div>
     
     <div class="row">
       <hr/>
-      <h2>Dados pet</h2>
-      <form>        
-        <div class="form-group col-sm-4">
+      <div class="form-group col-sm-12">
+        <h2>Dados pet</h2>
+      </div>
+        <div class="form-group col-sm-6">
           <label for="exampleFormControlSelect1">Especie</label>
           <select class="form-control" id="exampleFormControlSelect1">
             <option>Cachorro</option>
@@ -125,7 +123,7 @@
             <option>Indiferente</option>
           </select>
         </div>
-        <div class="form-group col-sm-4">
+        <div class="form-group col-sm-6">
           <label for="exampleFormControlSelect1">Porte</label>
           <select class="form-control" id="exampleFormControlSelect1">
             <option>Pequeno</option>
@@ -133,24 +131,13 @@
             <option>Grande</option>
             <option>Indiferente</option>             
           </select>
-        </div>     
-        
-        <div class="form-check col-sm-1">
-          <input class="form-check-input" type="checkbox" value="" id="passeio">
-          <label class="form-check-label" for="defaultCheck1">
-            Dispense passeio
-          </label>
-        </div>             
-      </form>
-    </div>
+        </div> 
+     </div>
       <br><br><br>
-      <div class="alert-warning right">
-        <h2> Total a pagar = R$ 200,00 <h2>
-      </div>     
-  
   <br><br>
     <button class="btn btn-warning" type="submit">Reservar</button>
   </div>
+</form>
 </center>
 <br><br><br>
 
