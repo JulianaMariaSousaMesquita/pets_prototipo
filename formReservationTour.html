@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par Perpet</title>
+
+    <!-- Importando fonte -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Importando arquivo com estilo -->
+    <link rel="stylesheet" href="assets/css/style.css"/>  
+    
+    <!-- Importando imagem para barra de endereço -->
+    <link rel="sortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- BOOTSTRAP -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+<body>
+  
+  <!-- Importando menu  -->
+  <object type="text/html" data="menuclient.html"></object>
+  
+<center> 
+  <form>
+  <div class="container">
+    <div class="form-check col-sm-12">
+      <h1> Reservar Passeio</h1><br><br>
+    </div>
+    <div class="row">
+      <hr/>
+      <div class="form-check col-sm-12">
+        <h2>Dados Gerais</h2>
+      </div>            
+      <div class="form-group col-sm-6">
+        <label for="exampleFormControlSelect1">Frequência</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Semanal</option>
+          <option>Quinzenal </option>
+          <option>Mensal</option>          
+        </select>
+      </div>
+      <div class="form-group col-sm-6">
+        <label for="exampleFormControlSelect1">Horário</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>          
+        </select>
+      </div> 
+      <br><br>
+    </div>
+    <div class="row">
+      <hr/>
+      <div class="form-check col-sm-12">
+        <br><br>
+      <h2>Dados Pagamento</h2>   <br><br>
+    </div>
+      <p>
+    <div class="form-check col-sm-4">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">Cartão de credito</label>
+    </div>
+    <div class="form-check col-sm-4">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">Cartão de débito</label>
+    </div>
+    <div class="form-check col-sm-4">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+      <label class="form-check-label" for="inlineRadio3">Dinheiro </label>
+    </div>
+    </p>
+    <div class="form-check col-sm-12">
+      <br><br>
+      <h6><strong>** Pagamento deve ser realizado no local, na hora da entrega do animal. **</strong> </h6>
+      <br><br>
+    </div>
+    <br><br><br><br>
+    </div>
+    
+    <div class="row">
+      <hr/>
+      <div class="form-group col-sm-12">
+        <h2>Dados pet</h2>
+      </div>
+        <div class="form-group col-sm-6">
+          <label for="exampleFormControlSelect1">Especie</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Cachorro</option>
+            <option>Gato</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="exampleFormControlSelect1">Porte</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Pequeno</option>
+            <option>Medio</option>
+            <option>Grande</option>        
+          </select>
+        </div> 
+     </div>
+      <br><br><br>
+    <button class="btn btn-warning" type="submit">Reservar</button>
+  </div>
+</form>
+</center>
+<br><br><br>
+
+  <!-- Importando rodape  -->
+  <object type="text/html" data="footer.html"></object>
+
+  
+
+    </script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>
